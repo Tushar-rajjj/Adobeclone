@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-image: url(488201827_17908937841100003_1811064833328388345_n.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: white#FFFFFF99;
+      backdrop-filter: blur(10px);
+      padding: 4vw;
+      margin: 0vw 9vw;
+      border-radius: 16px;
+      box-shadow: 0 1vw 3vw rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 24px;
+      color: #333;
+      font-family: cursive;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #353535;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      background: #DDDDDDB8;
+      border: 1px solid #DDDDDDB8;
+      backdrop-filter: blur(10px);
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #506BE2;
+      outline: none;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #0D00FBA6;
+      color: white;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+      
+    }
+
+    .login-btn:hover {
+      background-color: #5a67d8;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: black;
+    }
+
+    .footer a {
+      color: #667eea;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+    <div class="footer">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
+</body>
+</html>
